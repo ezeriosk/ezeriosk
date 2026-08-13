@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clear Business Insights & Automation — Ezequiel Ríos Kaliman</title>
-  <meta name="description" content="Clear business insights, automated reporting and practical AI for small teams that want to understand what is happening and decide what to do next.">
+  <title>Business Insights, Reporting & Automation — Ezequiel Ríos Kaliman</title>
+  <meta name="description" content="Two services for small teams: clear business insights and reporting in any useful format, plus process automation with or without AI.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#f4f1e8">
   <link rel="canonical" href="https://ezequiel-data-analyst.vercel.app/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ezequiel-data-analyst.vercel.app/">
-  <meta property="og:title" content="Clear Business Insights & Automation — Ezequiel Ríos Kaliman">
-  <meta property="og:description" content="Understand what is happening, know where to act and automate the reporting work behind better decisions.">
+  <meta property="og:title" content="Business Insights, Reporting & Automation — Ezequiel Ríos Kaliman">
+  <meta property="og:description" content="Get clearer answers from your data or automate repetitive work—with AI only when it genuinely helps.">
   <meta property="og:locale" content="en_GB">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Business Insights & Automation — Ezequiel Ríos Kaliman">
-  <meta name="twitter:description" content="Clear answers, automated reporting and practical AI for better business decisions.">
+  <meta name="twitter:title" content="Business Insights, Reporting & Automation — Ezequiel Ríos Kaliman">
+  <meta name="twitter:description" content="Clear business answers and less repetitive work for small teams.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23141717'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='monospace' font-size='21' font-weight='700' fill='%23d7ff3f'%3EER%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +26,7 @@
     "@type": "Person",
     "name": "Ezequiel Ríos Kaliman",
     "url": "https://ezequiel-data-analyst.vercel.app/",
-    "jobTitle": "Data Automation and Reporting Specialist",
+    "jobTitle": "Business Insights and Automation Specialist",
     "email": "mailto:ezequiel.datanalytics@gmail.com",
     "sameAs": [
       "https://www.linkedin.com/in/ezequiel-rioskaliman/",
@@ -236,12 +236,12 @@
     .problem-layout{display:grid;grid-template-columns:minmax(0,.9fr) minmax(420px,1.1fr);border:1px solid var(--ink)}
     .problem-options{background:var(--paper-2)}
     .problem-button{
-      width:100%;display:grid;grid-template-columns:48px 1fr 26px;gap:14px;align-items:center;
+      width:100%;display:grid;grid-template-columns:100px 1fr 26px;gap:14px;align-items:center;
       text-align:left;padding:24px;border:0;border-bottom:1px solid var(--line);background:transparent;cursor:pointer;transition:.18s
     }
     .problem-button:last-child{border-bottom:0}
     .problem-button:hover,.problem-button.active{background:var(--acid);color:#141717}
-    .problem-button .count{font:400 11px var(--mono)}
+    .problem-button .count{font:400 9px var(--mono);letter-spacing:.04em}
     .problem-button .label{font:600 clamp(17px,2vw,22px) var(--sans)}
     .problem-button .plus{font:400 22px var(--mono)}
     .problem-answer{background:var(--panel-dark);color:var(--panel-ink);padding:clamp(32px,5vw,64px);display:flex;flex-direction:column;justify-content:space-between;min-height:410px}
@@ -253,7 +253,7 @@
 
     /* Services */
     .services{padding:120px 0;background:var(--panel-dark);color:var(--panel-ink);position:relative;overflow:hidden}
-    .services::after{content:"DATA / WORK";position:absolute;right:-22px;top:30px;font:500 clamp(70px,13vw,180px) var(--display);font-style:italic;color:rgba(255,255,255,.025);white-space:nowrap}
+    .services::after{content:"DECIDE / AUTOMATE";position:absolute;right:-22px;top:30px;font:500 clamp(70px,13vw,180px) var(--display);font-style:italic;color:rgba(255,255,255,.025);white-space:nowrap}
     .services .section-kicker{color:var(--acid)}
     .services .section-heading p{color:var(--panel-muted)}
     .service-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--panel-line);border-left:1px solid var(--panel-line)}
@@ -266,8 +266,10 @@
     .service-list li{font:400 13px var(--mono);color:#e0e4e1}
     .service-list li::before{content:"↳";color:var(--acid);margin-right:10px}
     .service-card:nth-child(2) h3{color:var(--acid)}
-    .service-card:nth-child(3) h3{color:var(--cyan)}
-    .service-card:nth-child(4) h3{color:#ff8c77}
+    .service-outcome{margin-top:30px;padding-top:20px;border-top:1px solid var(--panel-line);font:500 12px var(--mono);color:var(--acid)}
+    .service-bridge{display:grid;grid-template-columns:minmax(220px,.7fr) 1.3fr;gap:34px;align-items:center;padding:28px 32px;background:var(--acid);color:#141717;border:1px solid #000}
+    .service-bridge strong{font:500 clamp(26px,3vw,38px) var(--display);line-height:1}
+    .service-bridge p{color:#26300d;max-width:720px}
 
     /* Proof */
     .proof{padding:120px 0}
@@ -379,6 +381,7 @@
       .problems,.services,.proof,.process,.faq,.contact{padding-top:88px}.problems,.proof,.faq{padding-bottom:88px}
       .section-heading{margin-bottom:36px}.problem-layout{border:0}.problem-options{border:1px solid var(--ink)}.problem-answer{min-height:360px}
       .service-grid{grid-template-columns:1fr}.service-card{min-height:auto}.service-card h3{margin-top:38px}
+      .service-bridge{grid-template-columns:1fr;padding:24px;gap:14px}
       .case{grid-template-columns:42px 1fr;gap:16px}.case-copy{grid-column:2}.outcome{grid-column:2;display:block}.outcome span{max-width:none}
       .fit{padding-bottom:88px}.fit-box{box-shadow:7px 7px 0 var(--ink)}
       .steps{grid-template-columns:1fr}.step{min-height:auto}.step h3{margin-top:38px}
@@ -415,14 +418,14 @@
     <section class="hero" id="top">
       <div class="shell hero-grid">
         <div class="hero-copy">
-          <div class="eyebrow"><span data-en="Clear answers · automated reports · practical AI" data-es="Respuestas claras · reportes automáticos · IA útil">Clear answers · automated reports · practical AI</span></div>
-          <h1><span data-en="See what matters." data-es="Entendé qué importa.">See what matters.</span><br><em data-en="Know what to do next." data-es="Sabé qué hacer después.">Know what to do next.</em></h1>
+          <div class="eyebrow"><span data-en="Insights & reporting · process automation" data-es="Insights y reportes · automatización de procesos">Insights & reporting · process automation</span></div>
+          <h1><span data-en="Decide better." data-es="Decidí mejor.">Decide better.</span><br><em data-en="Work less manually." data-es="Hacé menos trabajo manual.">Work less manually.</em></h1>
           <p class="hero-lead">
-            <span data-en="I help small teams " data-es="Ayudo a equipos pequeños a ">I help small teams </span><strong data-en="understand what is happening, why it is happening and where to act" data-es="entender qué está pasando, por qué y dónde actuar">understand what is happening, why it is happening and where to act</strong><span data-en="—with clear insights, reports that update themselves and AI that removes repetitive work." data-es="—con insights claros, reportes que se actualizan solos e IA que elimina trabajo repetitivo.">—with clear insights, reports that update themselves and AI that removes repetitive work.</span>
+            <span data-en="Two distinct ways I help small teams: " data-es="Ayudo a equipos pequeños de dos formas distintas: ">Two distinct ways I help small teams: </span><strong data-en="I turn data into clear insights and reports in the format you prefer; or I automate repetitive processes" data-es="convierto datos en insights y reportes claros en el formato que prefieras; o automatizo procesos repetitivos">I turn data into clear insights and reports in the format you prefer; or I automate repetitive processes</strong><span data-en="—with or without AI—so your team gets time back." data-es="—con o sin IA—para que tu equipo recupere tiempo.">—with or without AI—so your team gets time back.</span>
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#contact"><span data-en="Tell me what you need to decide" data-es="Contame qué necesitás decidir">Tell me what you need to decide</span> ↓</a>
-            <a class="button button-secondary" href="#services"><span data-en="See services" data-es="Ver servicios">See services</span> ↓</a>
+            <a class="button button-primary" href="#contact"><span data-en="Tell me what you need" data-es="Contame qué necesitás">Tell me what you need</span> ↓</a>
+            <a class="button button-secondary" href="#services"><span data-en="See the two services" data-es="Ver los dos servicios">See the two services</span> ↓</a>
           </div>
           <div class="availability">
             <span class="status-dot" aria-hidden="true"></span>
@@ -445,38 +448,38 @@
             <div class="mini-metric"><span data-en="changes explained" data-es="cambios explicados">changes explained</span><strong>✓</strong></div>
             <div class="mini-metric"><span data-en="next action" data-es="próxima acción">next action</span><strong data-en="Clear" data-es="Clara">Clear</strong></div>
           </div>
-          <div class="field-note"><strong data-en="More than charts." data-es="Más que gráficos.">More than charts.</strong><span data-en="You get the meaning behind the numbers and what deserves attention now." data-es="Recibís el significado detrás de los números y qué merece atención ahora.">You get the meaning behind the numbers and what deserves attention now.</span></div>
+          <div class="field-note"><strong data-en="This is one side." data-es="Este es uno de los lados.">This is one side.</strong><span data-en="The other is automating repetitive processes—with or without AI." data-es="El otro es automatizar procesos repetitivos, con o sin IA.">The other is automating repetitive processes—with or without AI.</span></div>
         </aside>
       </div>
     </section>
 
     <div class="tool-strip" aria-label="Tools and capabilities">
       <div class="shell tool-track">
-        <span>Clear Insights</span><span>Automated Reports</span><span>Business Alerts</span><span>Useful AI</span><span>Sales Visibility</span><span>Marketing Performance</span><span>Operational Clarity</span>
+        <span>Insights & Reporting</span><span>Dashboards</span><span>Emails & Presentations</span><span>Process Automation</span><span>With or Without AI</span><span>Less Manual Work</span>
       </div>
     </div>
 
     <section class="problems" aria-labelledby="problems-title">
       <div class="shell">
-        <span class="section-kicker" data-en="Common business problems" data-es="Problemas comunes del negocio">Common business problems</span>
+        <span class="section-kicker" data-en="Start from either problem" data-es="Empezá por cualquiera de los dos problemas">Start from either problem</span>
         <div class="section-heading">
-          <h2 id="problems-title"><span data-en="What keeps your team" data-es="¿Qué impide que tu equipo">What keeps your team</span><br><em data-en="from deciding faster?" data-es="decida más rápido?">from deciding faster?</em></h2>
-          <p data-en="You do not need to know which dashboard or technology you need. Start with the question you cannot answer quickly or the task your team keeps repeating." data-es="No necesitás saber qué dashboard o tecnología hace falta. Empezá por la pregunta que no podés responder rápido o la tarea que tu equipo sigue repitiendo.">You do not need to know which dashboard or technology you need. Start with the question you cannot answer quickly or the task your team keeps repeating.</p>
+          <h2 id="problems-title"><span data-en="Need clearer answers" data-es="¿Necesitás respuestas claras">Need clearer answers</span><br><em data-en="or less manual work?" data-es="o menos trabajo manual?">or less manual work?</em></h2>
+          <p data-en="You do not need to know which tool or technology is required. Start with what you want to understand or what you want to stop doing by hand." data-es="No necesitás saber qué herramienta o tecnología hace falta. Empezá por lo que querés entender o lo que querés dejar de hacer manualmente.">You do not need to know which tool or technology is required. Start with what you want to understand or what you want to stop doing by hand.</p>
         </div>
         <div class="problem-layout">
           <div class="problem-options" role="tablist" aria-label="Common data problems">
-            <button class="problem-button active" type="button" role="tab" aria-selected="true" data-problem="sheets"><span class="count">01</span><span class="label" data-en="We spend hours preparing the same reports" data-es="Pasamos horas preparando los mismos reportes">We spend hours preparing the same reports</span><span class="plus">+</span></button>
-            <button class="problem-button" type="button" role="tab" aria-selected="false" data-problem="reporting"><span class="count">02</span><span class="label" data-en="We have numbers, but do not know what they mean" data-es="Tenemos números, pero no sabemos qué significan">We have numbers, but do not know what they mean</span><span class="plus">+</span></button>
-            <button class="problem-button" type="button" role="tab" aria-selected="false" data-problem="sources"><span class="count">03</span><span class="label" data-en="We notice problems when it is already too late" data-es="Detectamos los problemas cuando ya es tarde">We notice problems when it is already too late</span><span class="plus">+</span></button>
-            <button class="problem-button" type="button" role="tab" aria-selected="false" data-problem="automation"><span class="count">04</span><span class="label" data-en="We want AI to save time, but do not know where to start" data-es="Queremos que la IA nos ahorre tiempo, pero no sabemos por dónde empezar">We want AI to save time, but do not know where to start</span><span class="plus">+</span></button>
+            <button class="problem-button active" type="button" role="tab" aria-selected="true" data-problem="sheets"><span class="count">01 · INSIGHTS</span><span class="label" data-en="We have data, but no clear answer" data-es="Tenemos datos, pero no una respuesta clara">We have data, but no clear answer</span><span class="plus">+</span></button>
+            <button class="problem-button" type="button" role="tab" aria-selected="false" data-problem="reporting"><span class="count">02 · INSIGHTS</span><span class="label" data-en="Our reports do not tell us what to do" data-es="Nuestros reportes no nos dicen qué hacer">Our reports do not tell us what to do</span><span class="plus">+</span></button>
+            <button class="problem-button" type="button" role="tab" aria-selected="false" data-problem="sources"><span class="count">03 · AUTOMATE</span><span class="label" data-en="The team repeats the same manual steps" data-es="El equipo repite siempre los mismos pasos manuales">The team repeats the same manual steps</span><span class="plus">+</span></button>
+            <button class="problem-button" type="button" role="tab" aria-selected="false" data-problem="automation"><span class="count">04 · AUTOMATE</span><span class="label" data-en="We think AI could help, but do not know where" data-es="Creemos que la IA podría ayudar, pero no sabemos dónde">We think AI could help, but do not know where</span><span class="plus">+</span></button>
           </div>
           <div class="problem-answer" role="tabpanel" aria-live="polite">
             <div>
-              <span class="answer-label" id="answer-label">A report that arrives ready to use</span>
-              <h3 id="answer-title">Stop rebuilding it. Start using it.</h3>
-              <p id="answer-copy">I automate the repetitive preparation so your team receives an updated, checked report and can focus on what it means.</p>
+              <span class="answer-label" id="answer-label">Insights & reporting</span>
+              <h3 id="answer-title">Turn the numbers into an answer you can use.</h3>
+              <p id="answer-copy">I analyse what is happening, explain why it matters and deliver the answer in the format that best fits your team.</p>
             </div>
-            <div class="answer-meta" id="answer-meta"><span>Updated automatically</span><span>Checked</span><span>Delivered on time</span></div>
+            <div class="answer-meta" id="answer-meta"><span>Dashboard</span><span>Email</span><span>Sheet or presentation</span></div>
           </div>
         </div>
       </div>
@@ -484,56 +487,40 @@
 
     <section class="services" id="services" aria-labelledby="services-title">
       <div class="shell">
-        <span class="section-kicker" data-en="How I help" data-es="Cómo te ayudo">How I help</span>
+        <span class="section-kicker" data-en="Two separate services" data-es="Dos servicios distintos">Two separate services</span>
         <div class="section-heading">
-          <h2 id="services-title"><span data-en="Clearer answers." data-es="Respuestas más claras.">Clearer answers.</span><br><em data-en="Less work to get them." data-es="Menos trabajo para obtenerlas.">Less work to get them.</em></h2>
-          <p data-en="The goal is simple: help you understand the business, spot what needs attention and act sooner—while automating the work required to keep that information current." data-es="El objetivo es simple: ayudarte a entender el negocio, detectar qué necesita atención y actuar antes, automatizando el trabajo necesario para mantener esa información actualizada.">The goal is simple: help you understand the business, spot what needs attention and act sooner—while automating the work required to keep that information current.</p>
+          <h2 id="services-title"><span data-en="Understand more." data-es="Entendé mejor.">Understand more.</span><br><em data-en="Or work less." data-es="O trabajá menos.">Or work less.</em></h2>
+          <p data-en="Hire either service independently or combine them. Insights and reporting are about better decisions. Automation is about removing repetitive work. AI is optional, never the starting point." data-es="Podés contratar cada servicio por separado o combinarlos. Los insights y reportes sirven para decidir mejor. La automatización sirve para eliminar trabajo repetitivo. La IA es opcional, nunca el punto de partida.">Hire either service independently or combine them. Insights and reporting are about better decisions. Automation is about removing repetitive work. AI is optional, never the starting point.</p>
         </div>
         <div class="service-grid">
           <article class="service-card">
-            <div class="service-top"><span>01 / save time</span><span data-en="Defined project" data-es="Proyecto definido">Defined project</span></div>
-            <h3 data-en="Reports that update themselves" data-es="Reportes que se actualizan solos">Reports that update themselves</h3>
-            <p data-en="Your weekly or monthly numbers arrive ready to review, without exports, copy-paste or rebuilding the same report." data-es="Tus números semanales o mensuales llegan listos para revisar, sin exports, copy-paste ni reconstruir siempre el mismo reporte.">Your weekly or monthly numbers arrive ready to review, without exports, copy-paste or rebuilding the same report.</p>
+            <div class="service-top"><span>01 / INSIGHTS & REPORTING</span><span data-en="Project or monthly" data-es="Proyecto o mensual">Project or monthly</span></div>
+            <h3 data-en="Understand the business and decide what to do" data-es="Entendé el negocio y decidí qué hacer">Understand the business and decide what to do</h3>
+            <p data-en="I turn your sales, marketing, financial or operational data into clear answers: what changed, why it matters and where to act." data-es="Convierto tus datos de ventas, marketing, finanzas u operaciones en respuestas claras: qué cambió, por qué importa y dónde actuar.">I turn your sales, marketing, financial or operational data into clear answers: what changed, why it matters and where to act.</p>
             <ul class="service-list">
-              <li data-en="Updates from the tools you already use" data-es="Actualizaciones desde las herramientas que ya usás">Updates from the tools you already use</li>
-              <li data-en="Consistent numbers and calculations" data-es="Números y cálculos consistentes">Consistent numbers and calculations</li>
-              <li data-en="Warnings when something looks wrong" data-es="Avisos cuando algo parece incorrecto">Warnings when something looks wrong</li>
-              <li data-en="Delivered where your team needs it" data-es="Entrega donde tu equipo la necesita">Delivered where your team needs it</li>
+              <li data-en="Dashboards to follow the business at a glance" data-es="Dashboards para seguir el negocio de un vistazo">Dashboards to follow the business at a glance</li>
+              <li data-en="Email reports with explanations and recommendations" data-es="Reportes por email con explicaciones y recomendaciones">Email reports with explanations and recommendations</li>
+              <li data-en="Sheets or presentations your team can actually use" data-es="Sheets o presentaciones que tu equipo realmente pueda usar">Sheets or presentations your team can actually use</li>
+              <li data-en="One-off analysis for an important business question" data-es="Análisis puntual para una pregunta importante del negocio">One-off analysis for an important business question</li>
             </ul>
+            <div class="service-outcome" data-en="OUTPUT → A clear answer in the format that helps you act." data-es="RESULTADO → Una respuesta clara en el formato que te ayude a actuar.">OUTPUT → A clear answer in the format that helps you act.</div>
           </article>
           <article class="service-card">
-            <div class="service-top"><span>02 / understand</span><span data-en="Defined project" data-es="Proyecto definido">Defined project</span></div>
-            <h3 data-en="Clear answers from your numbers" data-es="Respuestas claras desde tus números">Clear answers from your numbers</h3>
-            <p data-en="Understand what changed in sales, marketing, costs or operations, why it matters and what deserves action now." data-es="Entendé qué cambió en ventas, marketing, costos u operaciones, por qué importa y qué requiere acción ahora.">Understand what changed in sales, marketing, costs or operations, why it matters and what deserves action now.</p>
+            <div class="service-top"><span>02 / PROCESS AUTOMATION</span><span data-en="With or without AI" data-es="Con o sin IA">With or without AI</span></div>
+            <h3 data-en="Remove repetitive work and give time back" data-es="Eliminá trabajo repetitivo y recuperá tiempo">Remove repetitive work and give time back</h3>
+            <p data-en="I find the manual steps that consume time and make them happen automatically. Sometimes that needs AI; often a simpler automation is better." data-es="Identifico los pasos manuales que consumen tiempo y hago que ocurran automáticamente. A veces hace falta IA; muchas veces una automatización más simple es mejor.">I find the manual steps that consume time and make them happen automatically. Sometimes that needs AI; often a simpler automation is better.</p>
             <ul class="service-list">
-              <li data-en="One clear view of the business" data-es="Una vista clara del negocio">One clear view of the business</li>
-              <li data-en="Trends, opportunities and problems explained" data-es="Tendencias, oportunidades y problemas explicados">Trends, opportunities and problems explained</li>
-              <li data-en="Progress against your goals" data-es="Avance respecto de tus objetivos">Progress against your goals</li>
-              <li data-en="Recommendations and clear next actions" data-es="Recomendaciones y próximos pasos claros">Recommendations and clear next actions</li>
+              <li data-en="Move information between the tools you already use" data-es="Mover información entre las herramientas que ya usás">Move information between the tools you already use</li>
+              <li data-en="Create documents, updates or notifications automatically" data-es="Crear documentos, actualizaciones o avisos automáticamente">Create documents, updates or notifications automatically</li>
+              <li data-en="Read, sort or summarise information with AI when useful" data-es="Leer, ordenar o resumir información con IA cuando sea útil">Read, sort or summarise information with AI when useful</li>
+              <li data-en="Keep human approval for important actions" data-es="Mantener aprobación humana para acciones importantes">Keep human approval for important actions</li>
             </ul>
+            <div class="service-outcome" data-en="OUTPUT → A process that takes fewer clicks, fewer hours and fewer mistakes." data-es="RESULTADO → Un proceso con menos clics, menos horas y menos errores.">OUTPUT → A process that takes fewer clicks, fewer hours and fewer mistakes.</div>
           </article>
-          <article class="service-card">
-            <div class="service-top"><span>03 / simplify</span><span data-en="Project or retainer" data-es="Proyecto o mensual">Project or retainer</span></div>
-            <h3 data-en="AI that saves real work" data-es="IA que ahorra trabajo real">AI that saves real work</h3>
-            <p data-en="Use AI to read, organise, summarise or investigate repetitive information—inside a useful process, not as a novelty." data-es="Usá IA para leer, ordenar, resumir o investigar información repetitiva dentro de un proceso útil, no como una novedad.">Use AI to read, organise, summarise or investigate repetitive information—inside a useful process, not as a novelty.</p>
-            <ul class="service-list">
-              <li data-en="Plain-language summaries of results" data-es="Resúmenes de resultados en lenguaje simple">Plain-language summaries of results</li>
-              <li data-en="Information organised automatically" data-es="Información organizada automáticamente">Information organised automatically</li>
-              <li data-en="Unusual changes highlighted for review" data-es="Cambios inusuales destacados para revisar">Unusual changes highlighted for review</li>
-              <li data-en="Human approval before important actions" data-es="Aprobación humana antes de acciones importantes">Human approval before important actions</li>
-            </ul>
-          </article>
-          <article class="service-card">
-            <div class="service-top"><span>04 / improve</span><span data-en="Monthly support" data-es="Soporte mensual">Monthly support</span></div>
-            <h3 data-en="Ongoing help to make better decisions" data-es="Ayuda continua para decidir mejor">Ongoing help to make better decisions</h3>
-            <p data-en="Regular analysis, explanations and improvements for teams that need reliable answers but not another full-time hire." data-es="Análisis, explicaciones y mejoras frecuentes para equipos que necesitan respuestas confiables sin otra contratación full-time.">Regular analysis, explanations and improvements for teams that need reliable answers but not another full-time hire.</p>
-            <ul class="service-list">
-              <li data-en="Regular answers to business questions" data-es="Respuestas frecuentes a preguntas del negocio">Regular answers to business questions</li>
-              <li data-en="Reports that improve as needs change" data-es="Reportes que mejoran cuando cambian las necesidades">Reports that improve as needs change</li>
-              <li data-en="New opportunities and risks surfaced" data-es="Nuevas oportunidades y riesgos detectados">New opportunities and risks surfaced</li>
-              <li data-en="The next improvement clearly prioritised" data-es="La próxima mejora claramente priorizada">The next improvement clearly prioritised</li>
-            </ul>
-          </article>
+        </div>
+        <div class="service-bridge">
+          <strong data-en="Separate—or combined." data-es="Separados o combinados.">Separate—or combined.</strong>
+          <p data-en="Need only a monthly business report? That is enough. Need to automate an administrative task unrelated to data? Also valid. When both problems exist, the report itself can become automated." data-es="¿Solo necesitás un reporte mensual del negocio? Es suficiente. ¿Querés automatizar una tarea administrativa que no tiene relación con datos? También sirve. Cuando existen ambos problemas, el propio reporte puede quedar automatizado.">Need only a monthly business report? That is enough. Need to automate an administrative task unrelated to data? Also valid. When both problems exist, the report itself can become automated.</p>
         </div>
       </div>
     </section>
@@ -595,16 +582,16 @@
 
     <section class="process" id="process" aria-labelledby="process-title">
       <div class="shell">
-        <span class="section-kicker" data-en="A simple way to start" data-es="Una forma simple de empezar">A simple way to start</span>
+        <span class="section-kicker" data-en="Same simple process for either service" data-es="El mismo proceso simple para cualquiera de los dos">Same simple process for either service</span>
         <div class="section-heading">
-          <h2 id="process-title"><span data-en="Start with one question." data-es="Empezá con una pregunta.">Start with one question.</span><br><em data-en="Build what helps answer it." data-es="Construí lo que ayuda a responderla.">Build what helps answer it.</em></h2>
-          <p data-en="We begin with the business decision, create a useful first version and improve it with real use. No large platform or technical brief required." data-es="Empezamos por la decisión del negocio, creamos una primera versión útil y la mejoramos con uso real. No hace falta una gran plataforma ni un brief técnico.">We begin with the business decision, create a useful first version and improve it with real use. No large platform or technical brief required.</p>
+          <h2 id="process-title"><span data-en="Start with one outcome." data-es="Empezá con un resultado.">Start with one outcome.</span><br><em data-en="Build only what helps." data-es="Construí solo lo que ayuda.">Build only what helps.</em></h2>
+          <p data-en="The outcome might be a clearer answer or fewer manual steps. We create a useful first version, test it with real work and improve only what adds value." data-es="El resultado puede ser una respuesta más clara o menos pasos manuales. Creamos una primera versión útil, la probamos con trabajo real y mejoramos solo lo que aporta valor.">The outcome might be a clearer answer or fewer manual steps. We create a useful first version, test it with real work and improve only what adds value.</p>
         </div>
         <div class="steps">
-          <article class="step"><span class="step-index">01 / QUESTION</span><h3 data-en="Choose what you need to know" data-es="Elegí qué necesitás saber">Choose what you need to know</h3><p data-en="The decision, the information missing today and what your team would do differently with a clear answer." data-es="La decisión, la información que falta hoy y qué haría distinto tu equipo con una respuesta clara.">The decision, the information missing today and what your team would do differently with a clear answer.</p></article>
-          <article class="step"><span class="step-index">02 / FIRST VERSION</span><h3 data-en="Create one useful answer" data-es="Crear una respuesta útil">Create one useful answer</h3><p data-en="Use real information to show the result quickly, check that it makes sense and avoid unnecessary scope." data-es="Usamos información real para mostrar el resultado rápido, comprobar que tenga sentido y evitar alcance innecesario.">Use real information to show the result quickly, check that it makes sense and avoid unnecessary scope.</p></article>
-          <article class="step"><span class="step-index">03 / SAVE TIME</span><h3 data-en="Automate the repetitive work" data-es="Automatizar el trabajo repetitivo">Automate the repetitive work</h3><p data-en="Make updates, checks and summaries happen automatically while people remain in control of important decisions." data-es="Hacemos que actualizaciones, controles y resúmenes ocurran solos, manteniendo a las personas a cargo de decisiones importantes.">Make updates, checks and summaries happen automatically while people remain in control of important decisions.</p></article>
-          <article class="step"><span class="step-index">04 / IMPROVE</span><h3 data-en="Learn and improve" data-es="Aprender y mejorar">Learn and improve</h3><p data-en="See what the team uses, add the next valuable answer and remove anything that does not help a decision." data-es="Vemos qué usa el equipo, agregamos la próxima respuesta valiosa y eliminamos lo que no ayuda a decidir.">See what the team uses, add the next valuable answer and remove anything that does not help a decision.</p></article>
+          <article class="step"><span class="step-index">01 / OUTCOME</span><h3 data-en="Define the improvement" data-es="Definir la mejora">Define the improvement</h3><p data-en="What should become clearer, faster or easier—and how we will know the change actually helped." data-es="Qué debería volverse más claro, rápido o fácil y cómo sabremos si el cambio realmente ayudó.">What should become clearer, faster or easier—and how we will know the change actually helped.</p></article>
+          <article class="step"><span class="step-index">02 / TODAY</span><h3 data-en="See how it works now" data-es="Ver cómo funciona hoy">See how it works now</h3><p data-en="The information, people, tools and manual steps involved today, explained without requiring a technical brief." data-es="La información, personas, herramientas y pasos manuales que intervienen hoy, sin necesitar un brief técnico.">The information, people, tools and manual steps involved today, explained without requiring a technical brief.</p></article>
+          <article class="step"><span class="step-index">03 / FIRST VERSION</span><h3 data-en="Deliver something useful" data-es="Entregar algo útil">Deliver something useful</h3><p data-en="A real report, answer or automated process that solves the smallest valuable part from beginning to end." data-es="Un reporte, respuesta o proceso automatizado real que resuelva la parte valiosa más pequeña de principio a fin.">A real report, answer or automated process that solves the smallest valuable part from beginning to end.</p></article>
+          <article class="step"><span class="step-index">04 / IMPROVE</span><h3 data-en="Use it and improve it" data-es="Usarlo y mejorarlo">Use it and improve it</h3><p data-en="Keep what helps, adjust what does not and expand only when the next improvement is clearly worth it." data-es="Conservamos lo que ayuda, ajustamos lo que no y ampliamos solo cuando la próxima mejora realmente vale la pena.">Keep what helps, adjust what does not and expand only when the next improvement is clearly worth it.</p></article>
         </div>
       </div>
     </section>
@@ -629,12 +616,12 @@
             <p data-en="Both. A defined cleanup, dashboard or automation can be delivered as a project. Evolving analysis, maintenance and improvements are better suited to a monthly arrangement." data-es="Ambos. Una limpieza, dashboard o automatización definida puede entregarse como proyecto. El análisis, mantenimiento y mejoras continuas encajan mejor en un acuerdo mensual.">Both. A defined cleanup, dashboard or automation can be delivered as a project. Evolving analysis, maintenance and improvements are better suited to a monthly arrangement.</p>
           </details>
           <details>
-            <summary data-en="How can AI help without creating more risk?" data-es="¿Cómo puede ayudar la IA sin generar más riesgo?">How can AI help without creating more risk?</summary>
-            <p data-en="AI can summarise results, organise information, suggest questions and highlight unusual changes. Important conclusions and actions remain checked and approved by a person." data-es="La IA puede resumir resultados, organizar información, sugerir preguntas y destacar cambios inusuales. Las conclusiones y acciones importantes siguen siendo revisadas y aprobadas por una persona.">AI can summarise results, organise information, suggest questions and highlight unusual changes. Important conclusions and actions remain checked and approved by a person.</p>
+            <summary data-en="Does automation always need AI?" data-es="¿La automatización siempre necesita IA?">Does automation always need AI?</summary>
+            <p data-en="No. Many useful automations only need clear rules and connections between tools. AI is added when the task requires reading, sorting, summarising or interpreting information—and only when it improves the result." data-es="No. Muchas automatizaciones útiles solo necesitan reglas claras y conexiones entre herramientas. La IA se agrega cuando la tarea requiere leer, ordenar, resumir o interpretar información, y solo si mejora el resultado.">No. Many useful automations only need clear rules and connections between tools. AI is added when the task requires reading, sorting, summarising or interpreting information—and only when it improves the result.</p>
           </details>
           <details>
             <summary data-en="What do you need for a first conversation?" data-es="¿Qué necesitás para una primera conversación?">What do you need for a first conversation?</summary>
-            <p data-en="A rough description is enough: which decision or report repeats, what the team does manually, which tools are involved and what faster information would let you do differently." data-es="Una descripción aproximada alcanza: qué decisión o reporte se repite, qué hace manualmente el equipo, qué herramientas intervienen y qué harían distinto con información más rápida.">A rough description is enough: which decision or report repeats, what the team does manually, which tools are involved and what faster information would let you do differently.</p>
+            <p data-en="A rough description is enough: what you want to understand or stop doing manually, how you handle it today and what a better result would look like." data-es="Una descripción aproximada alcanza: qué querés entender o dejar de hacer manualmente, cómo lo resolvés hoy y cómo sería un mejor resultado.">A rough description is enough: what you want to understand or stop doing manually, how you handle it today and what a better result would look like.</p>
           </details>
         </div>
       </div>
@@ -644,9 +631,9 @@
       <div class="shell">
         <div class="contact-grid">
           <div class="contact-copy">
-            <div class="eyebrow"><span data-en="Start with one recurring decision" data-es="Empecemos por una decisión recurrente">Start with one recurring decision</span></div>
-            <h2 id="contact-title"><span data-en="What should your team" data-es="¿Qué debería poder decidir">What should your team</span><br><em data-en="decide faster?" data-es="más rápido tu equipo?">decide faster?</em></h2>
-            <p data-en="Send me the question you cannot answer quickly, the decision you want to make with more confidence or the report that keeps consuming manual effort. I will help identify the simplest useful solution." data-es="Mandame la pregunta que no podés responder rápido, la decisión que querés tomar con más confianza o el reporte que sigue consumiendo esfuerzo manual. Voy a ayudarte a identificar la solución útil más simple.">Send me the question you cannot answer quickly, the decision you want to make with more confidence or the report that keeps consuming manual effort. I will help identify the simplest useful solution.</p>
+            <div class="eyebrow"><span data-en="Either service starts with a simple message" data-es="Cualquiera de los dos servicios empieza con un mensaje simple">Either service starts with a simple message</span></div>
+            <h2 id="contact-title"><span data-en="What do you want to understand" data-es="¿Qué querés entender">What do you want to understand</span><br><em data-en="or stop doing manually?" data-es="o dejar de hacer manualmente?">or stop doing manually?</em></h2>
+            <p data-en="Send me the business question you want answered or the repetitive process you want to reduce. I will help identify the simplest useful solution—with AI only if it genuinely helps." data-es="Mandame la pregunta del negocio que querés responder o el proceso repetitivo que querés reducir. Voy a ayudarte a identificar la solución útil más simple, con IA solo si realmente ayuda.">Send me the business question you want answered or the repetitive process you want to reduce. I will help identify the simplest useful solution—with AI only if it genuinely helps.</p>
             <div class="contact-details" aria-label="Direct contact details">
               <a class="contact-link" href="mailto:ezequiel.datanalytics@gmail.com?subject=Automation%20and%20reporting%20project">
                 <span class="contact-link-label">Email</span>
@@ -664,14 +651,14 @@
             <h3 data-en="A useful first message" data-es="Un primer mensaje útil">A useful first message</h3>
             <ol class="brief-list">
               <li><span class="num">01</span><span data-en="What your business or team does" data-es="Qué hace tu empresa o equipo">What your business or team does</span></li>
-              <li><span class="num">02</span><span data-en="The recurring report, process or decision" data-es="El reporte, proceso o decisión recurrente">The recurring report, process or decision</span></li>
-              <li><span class="num">03</span><span data-en="The tools and sources currently involved" data-es="Las herramientas y fuentes involucradas">The tools and sources currently involved</span></li>
-              <li><span class="num">04</span><span data-en="What faster, clearer action would look like" data-es="Cómo sería actuar con más rapidez y claridad">What faster, clearer action would look like</span></li>
+              <li><span class="num">02</span><span data-en="What you want to understand or automate" data-es="Qué querés entender o automatizar">What you want to understand or automate</span></li>
+              <li><span class="num">03</span><span data-en="How the team handles it today" data-es="Cómo lo resuelve hoy el equipo">How the team handles it today</span></li>
+              <li><span class="num">04</span><span data-en="What a useful result would look like" data-es="Cómo sería un resultado útil">What a useful result would look like</span></li>
             </ol>
           </aside>
         </div>
         <footer>
-          <span>© 2026 Ezequiel Ríos Kaliman · Data Automation & Reporting</span>
+          <span>© 2026 Ezequiel Ríos Kaliman · Business Insights & Automation</span>
           <span><a href="mailto:ezequiel.datanalytics@gmail.com">ezequiel.datanalytics@gmail.com</a> · <a href="https://www.linkedin.com/in/ezequiel-rioskaliman/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/ezeriosk" target="_blank" rel="noopener">GitHub</a> · <a href="Ezequiel_Rios_Kaliman_CV.pdf" download>CV ↓</a></span>
         </footer>
       </div>
@@ -698,54 +685,54 @@
     const problemContent = {
       en: {
         sheets: {
-          label: 'A report that arrives ready to use',
-          title: 'Stop rebuilding it. Start using it.',
-          copy: 'I automate the repetitive preparation so your team receives an updated, checked report and can focus on what it means.',
-          meta: ['Updated automatically', 'Checked', 'Delivered on time']
+          label: 'Insights & reporting',
+          title: 'Turn the numbers into an answer you can use.',
+          copy: 'I analyse what is happening, explain why it matters and deliver the answer in the format that best fits your team.',
+          meta: ['Dashboard', 'Email', 'Sheet or presentation']
         },
         reporting: {
-          label: 'Meaning behind the numbers',
-          title: 'Understand what changed and what to do next.',
-          copy: 'Turn a page of numbers into a clear explanation of performance, possible causes, priorities and useful next questions.',
-          meta: ['Clear explanation', 'Business context', 'Next actions']
+          label: 'Insights & reporting',
+          title: 'Go beyond charts. Make the next action clear.',
+          copy: 'I turn the report into a simple explanation of what changed, possible causes, priorities and useful next steps.',
+          meta: ['What changed', 'Why it matters', 'What to do next']
         },
         sources: {
-          label: 'Early warning instead of late surprise',
-          title: 'Know when something needs attention.',
-          copy: 'Track the signals that matter and alert the right person when sales, costs, campaigns or operations move in the wrong direction.',
-          meta: ['Goals tracked', 'Changes highlighted', 'Timely alerts']
+          label: 'Process automation · AI optional',
+          title: 'Remove the steps people should not repeat.',
+          copy: 'I connect the existing tools and automate transfers, updates, documents or notifications so the process needs less manual effort.',
+          meta: ['Fewer clicks', 'Fewer hours', 'Fewer mistakes']
         },
         automation: {
-          label: 'A practical place to start with AI',
-          title: 'Use AI on the work that actually consumes time.',
-          copy: 'Start with a repetitive task such as reading, organising, summarising or investigating information, then measure whether it genuinely helps.',
-          meta: ['Useful first step', 'Time saved', 'Human approval']
+          label: 'Process automation · with AI when useful',
+          title: 'Start with the task, not the technology.',
+          copy: 'If the work involves reading, sorting or summarising information, AI may help. If a simpler automation is enough, that is the better solution.',
+          meta: ['Useful first step', 'AI only if needed', 'Human approval']
         }
       },
       es: {
         sheets: {
-          label: 'Un reporte que llega listo para usar',
-          title: 'Dejá de reconstruirlo. Empezá a usarlo.',
-          copy: 'Automatizo la preparación repetitiva para que tu equipo reciba un reporte actualizado y revisado, y pueda enfocarse en qué significa.',
-          meta: ['Actualizado solo', 'Revisado', 'Entregado a tiempo']
+          label: 'Insights y reporting',
+          title: 'Convertí los números en una respuesta útil.',
+          copy: 'Analizo qué está pasando, explico por qué importa y entrego la respuesta en el formato que mejor se adapte a tu equipo.',
+          meta: ['Dashboard', 'Email', 'Sheet o presentación']
         },
         reporting: {
-          label: 'El significado detrás de los números',
-          title: 'Entendé qué cambió y qué hacer después.',
-          copy: 'Convertí una página de números en una explicación clara del rendimiento, posibles causas, prioridades y próximas preguntas útiles.',
-          meta: ['Explicación clara', 'Contexto del negocio', 'Próximas acciones']
+          label: 'Insights y reporting',
+          title: 'Andá más allá de los gráficos. Aclará la próxima acción.',
+          copy: 'Convierto el reporte en una explicación simple de qué cambió, posibles causas, prioridades y próximos pasos útiles.',
+          meta: ['Qué cambió', 'Por qué importa', 'Qué hacer después']
         },
         sources: {
-          label: 'Avisos tempranos en vez de sorpresas tardías',
-          title: 'Enterate cuando algo necesita atención.',
-          copy: 'Seguimos las señales importantes y avisamos a la persona indicada cuando ventas, costos, campañas u operaciones van en la dirección equivocada.',
-          meta: ['Objetivos seguidos', 'Cambios destacados', 'Alertas a tiempo']
+          label: 'Automatización de procesos · IA opcional',
+          title: 'Eliminá los pasos que nadie debería repetir.',
+          copy: 'Conecto las herramientas actuales y automatizo movimientos, actualizaciones, documentos o avisos para que el proceso necesite menos esfuerzo manual.',
+          meta: ['Menos clics', 'Menos horas', 'Menos errores']
         },
         automation: {
-          label: 'Una forma práctica de empezar con IA',
-          title: 'Usá IA en el trabajo que realmente consume tiempo.',
-          copy: 'Empezá con una tarea repetitiva como leer, ordenar, resumir o investigar información y medí si realmente ayuda.',
-          meta: ['Primer paso útil', 'Tiempo ahorrado', 'Aprobación humana']
+          label: 'Automatización de procesos · con IA cuando sirva',
+          title: 'Empezá por la tarea, no por la tecnología.',
+          copy: 'Si el trabajo implica leer, ordenar o resumir información, la IA puede ayudar. Si alcanza con una automatización más simple, esa es la mejor solución.',
+          meta: ['Primer paso útil', 'IA solo si hace falta', 'Aprobación humana']
         }
       }
     };
