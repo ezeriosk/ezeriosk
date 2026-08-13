@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelance Data Analyst for Small Teams — Ezequiel Ríos Kaliman</title>
+  <meta name="description" content="Freelance Data Analyst helping small teams fix spreadsheets, connect business data, build dashboards and automate recurring reporting.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#f4f1e8">
+  <link rel="canonical" href="https://ezequiel-data-analyst.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ezequiel-data-analyst.vercel.app/">
+  <meta property="og:title" content="Freelance Data Analyst for Small Teams — Ezequiel Ríos Kaliman">
+  <meta property="og:description" content="Clear reporting without the spreadsheet chaos: connected data, useful dashboards and practical automation.">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Freelance Data Analyst — Ezequiel Ríos Kaliman">
+  <meta name="twitter:description" content="Spreadsheets, connected reporting, dashboards and practical automation for small teams.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23141717'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='monospace' font-size='21' font-weight='700' fill='%23d7ff3f'%3EER%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&amp;family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,500&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ezequiel Ríos Kaliman",
+    "url": "https://ezequiel-data-analyst.vercel.app/",
+    "jobTitle": "Freelance Data Analyst",
+    "email": "mailto:ezequiel.datanalytics@gmail.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/ezequiel-rioskaliman/",
+      "https://github.com/ezeriosk"
+    ],
+    "knowsAbout": [
+      "Data Analysis",
+      "Google Sheets",
+      "Business Intelligence",
+      "Dashboard Design",
+      "Data Integration",
+      "Reporting Automation",
+      "SQL",
+      "Python",
+      "Practical AI Workflows"
+    ]
+  }
+  </script>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --paper:#f4f1e8;
+      --paper-2:#fffdf7;
+      --ink:#141717;
+      --ink-soft:#515856;
+      --muted:#727875;
+      --line:rgba(20,23,23,.18);
+      --line-soft:rgba(20,23,23,.08);
+      --acid:#d7ff3f;
+      --blue:#315bea;
+      --blue-text:#315bea;
+      --coral:#ff654b;
+      --cyan:#66d9d1;
+      --shadow:#141717;
+      --panel-dark:#141717;
+      --panel-dark-2:#202727;
+      --panel-ink:#f7f4e9;
+      --panel-muted:#b8c0bc;
+      --panel-line:rgba(255,255,255,.2);
+      --display:'Fraunces',serif;
+      --sans:'Instrument Sans',sans-serif;
+      --mono:'DM Mono',monospace;
+      --max:1240px;
+    }
+    body.dark{
+      --paper:#0d1010;
+      --paper-2:#151919;
+      --ink:#f5f2e8;
+      --ink-soft:#c0c5c1;
+      --muted:#8f9792;
+      --line:rgba(245,242,232,.18);
+      --line-soft:rgba(245,242,232,.08);
+      --shadow:#000;
+      --blue-text:#9db0ff;
+    }
+    html{scroll-behavior:smooth}
+    body{
+      background:var(--paper);
+      color:var(--ink);
+      font-family:var(--sans);
+      font-size:16px;
+      line-height:1.55;
+      overflow-x:hidden;
+      -webkit-font-smoothing:antialiased;
+      transition:background .25s,color .25s;
+    }
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      z-index:1000;
+      pointer-events:none;
+      opacity:.045;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")
+    }
+    a{color:inherit}
+    button,a{font:inherit}
+    button{color:inherit}
+    ::selection{background:var(--acid);color:#141717}
+    :focus-visible{outline:3px solid var(--blue-text);outline-offset:4px}
+    section[id]{scroll-margin-top:88px}
+    .skip-link{
+      position:fixed;left:20px;top:12px;z-index:2000;
+      transform:translateY(-160%);background:var(--panel-dark);color:var(--panel-ink);
+      padding:10px 14px;font:500 12px var(--mono);text-decoration:none
+    }
+    .skip-link:focus{transform:translateY(0)}
+    .shell{width:min(calc(100% - 40px),var(--max));margin-inline:auto}
+    .mono{font-family:var(--mono)}
+    .eyebrow{
+      display:flex;align-items:center;gap:12px;
+      font:500 11px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)
+    }
+    .eyebrow::before{content:"";width:24px;height:2px;background:var(--coral)}
+    .section-kicker{font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--blue-text)}
+    .section-number{font:400 clamp(38px,6vw,74px) var(--display);font-style:italic;color:var(--line)}
+    h1,h2,h3{font-family:var(--display);font-weight:500;line-height:.98;letter-spacing:-.035em}
+    h2{font-size:clamp(42px,6vw,78px)}
+    h3{font-size:clamp(27px,3vw,38px)}
+    p{color:var(--ink-soft)}
+
+    /* Navigation */
+    .site-nav{
+      position:fixed;inset:0 0 auto;z-index:900;
+      border-bottom:1px solid transparent;transition:.25s
+    }
+    .site-nav.scrolled{background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(16px);border-color:var(--line)}
+    .nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{
+      display:inline-grid;place-items:center;width:44px;height:44px;border:1.5px solid var(--ink);
+      border-radius:50%;text-decoration:none;font:500 12px var(--mono);transition:.2s
+    }
+    .brand:hover{background:var(--panel-dark);color:var(--acid);transform:rotate(-8deg)}
+    .nav-links{display:flex;align-items:center;gap:24px}
+    .nav-links a{text-decoration:none;color:var(--ink-soft);font:500 13px var(--sans)}
+    .nav-links a:hover{color:var(--blue-text)}
+    .nav-actions{display:flex;align-items:center;gap:9px}
+    .icon-button,.language-button{
+      height:36px;border:1px solid var(--ink);background:var(--paper-2);cursor:pointer;
+      box-shadow:3px 3px 0 var(--ink);font:500 11px var(--mono);transition:.15s
+    }
+    .icon-button{width:36px;border-radius:50%}
+    .language-button{padding:0 11px;background:var(--acid);color:#141717}
+    .icon-button:hover,.language-button:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0 var(--ink)}
+    .nav-cta{
+      display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 15px;
+      border:1px solid var(--ink);background:var(--ink);color:var(--paper);text-decoration:none;
+      font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.05em
+    }
+    .nav-cta:hover{background:var(--blue);border-color:var(--blue);color:#fff}
+
+    /* Hero */
+    .hero{position:relative;min-height:760px;padding:150px 0 80px;overflow:hidden}
+    .hero::before{
+      content:"";position:absolute;inset:0;z-index:-2;
+      background:
+        linear-gradient(var(--line-soft) 1px,transparent 1px),
+        linear-gradient(90deg,var(--line-soft) 1px,transparent 1px),
+        radial-gradient(circle at 10% 25%,color-mix(in srgb,var(--acid) 45%,transparent),transparent 34%),
+        radial-gradient(circle at 89% 72%,color-mix(in srgb,var(--cyan) 34%,transparent),transparent 30%);
+      background-size:52px 52px,52px 52px,auto,auto
+    }
+    .hero::after{
+      content:"";position:absolute;z-index:-1;width:52vw;height:1px;background:var(--coral);
+      top:46%;left:-8vw;transform:rotate(-13deg);box-shadow:0 135px 0 color-mix(in srgb,var(--blue) 55%,transparent)
+    }
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(420px,.95fr);gap:clamp(45px,7vw,100px);align-items:center}
+    .hero-copy{animation:arrive .6s ease-out both}
+    @keyframes arrive{from{transform:translateY(16px);opacity:.55}to{transform:none;opacity:1}}
+    .hero h1{font-size:clamp(62px,7.6vw,112px);margin:24px 0 28px;max-width:850px}
+    .hero h1 em{font-weight:300;color:var(--blue-text)}
+    .hero-lead{font-size:clamp(18px,2vw,24px);line-height:1.5;max-width:690px;color:var(--ink-soft)}
+    .hero-lead strong{color:var(--ink);font-weight:600}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin:34px 0 28px}
+    .button{
+      min-height:54px;display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      padding:0 20px;border:1.5px solid var(--ink);text-decoration:none;font:600 13px var(--sans);
+      transition:.18s;position:relative
+    }
+    .button-primary{background:var(--acid);color:#141717;box-shadow:6px 6px 0 var(--ink)}
+    .button-primary:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 var(--ink)}
+    .button-secondary{background:var(--paper-2)}
+    .button-secondary:hover{background:var(--ink);color:var(--paper)}
+    .availability{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;font:400 11px var(--mono);color:var(--ink-soft)}
+    .status-dot{width:9px;height:9px;border-radius:50%;background:#56c87a;box-shadow:0 0 0 5px rgba(86,200,122,.14)}
+
+    .report-card{
+      position:relative;background:#171b1b;color:#f7f4e9;border:1px solid #000;
+      padding:24px;box-shadow:18px 18px 0 var(--blue);transform:rotate(1.2deg);
+      animation:cardIn .7s .08s ease-out both
+    }
+    @keyframes cardIn{from{transform:translate(20px,12px) rotate(2.5deg);opacity:.45}to{transform:rotate(1.2deg);opacity:1}}
+    .report-card::before{content:"";position:absolute;inset:7px;border:1px solid rgba(255,255,255,.08);pointer-events:none}
+    .report-head{display:flex;justify-content:space-between;gap:18px;padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,.18);font:400 10px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#aeb6b2}
+    .live{display:flex;align-items:center;gap:7px;color:var(--acid)}
+    .live::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--acid);box-shadow:0 0 10px var(--acid)}
+    .report-card h2{font-size:clamp(34px,4vw,52px);margin:24px 0 12px;color:#fff}
+    .report-card>p{color:#b9c0bc;font-size:14px;max-width:480px}
+    .source-flow{display:grid;grid-template-columns:1fr 34px 1fr 34px 1.35fr;align-items:center;gap:7px;margin:28px 0}
+    .source,.destination{border:1px solid rgba(255,255,255,.2);padding:13px 8px;text-align:center;font:500 10px var(--mono);text-transform:uppercase}
+    .source{background:#222828;color:#e7ebe8}
+    .destination{background:var(--acid);color:#141717;border-color:var(--acid)}
+    .arrow{text-align:center;color:var(--acid);font:500 16px var(--mono)}
+    .mini-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    .mini-metric{background:#222828;border-top:2px solid var(--coral);padding:14px 12px;min-height:88px}
+    .mini-metric:nth-child(2){border-color:var(--cyan)}
+    .mini-metric:nth-child(3){border-color:var(--acid)}
+    .mini-metric span{display:block;color:#9fa8a3;font:400 9px var(--mono);text-transform:uppercase;letter-spacing:.06em}
+    .mini-metric strong{display:block;font:500 25px var(--display);margin-top:7px;color:#fff}
+    .field-note{
+      position:absolute;right:-30px;bottom:-42px;width:190px;padding:17px 18px;
+      background:var(--acid);color:#141717;border:1px solid #141717;box-shadow:7px 7px 0 #141717;
+      transform:rotate(-4deg);font:400 11px var(--mono)
+    }
+    .field-note strong{display:block;font:600 18px var(--display);margin-bottom:5px}
+
+    /* Trust strip */
+    .tool-strip{border-block:1px solid var(--line);background:var(--paper-2);overflow:hidden}
+    .tool-track{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px 28px;padding:20px 0;color:var(--ink-soft);font:500 11px var(--mono)}
+    .tool-track span{display:inline-flex;align-items:center;gap:28px}
+    .tool-track span:not(:last-child)::after{content:"✦";color:var(--coral)}
+
+    /* Problem selector */
+    .problems{padding:120px 0}
+    .section-heading{display:grid;grid-template-columns:1fr minmax(260px,430px);gap:50px;align-items:end;margin:18px 0 55px}
+    .section-heading p{font-size:18px;max-width:430px}
+    .problem-layout{display:grid;grid-template-columns:minmax(0,.9fr) minmax(420px,1.1fr);border:1px solid var(--ink)}
+    .problem-options{background:var(--paper-2)}
+    .problem-button{
+      width:100%;display:grid;grid-template-columns:48px 1fr 26px;gap:14px;align-items:center;
+      text-align:left;padding:24px;border:0;border-bottom:1px solid var(--line);background:transparent;cursor:pointer;transition:.18s
+    }
+    .problem-button:last-child{border-bottom:0}
+    .problem-button:hover,.problem-button.active{background:var(--acid);color:#141717}
+    .problem-button .count{font:400 11px var(--mono)}
+    .problem-button .label{font:600 clamp(17px,2vw,22px) var(--sans)}
+    .problem-button .plus{font:400 22px var(--mono)}
+    .problem-answer{background:var(--panel-dark);color:var(--panel-ink);padding:clamp(32px,5vw,64px);display:flex;flex-direction:column;justify-content:space-between;min-height:410px}
+    .answer-label{font:500 10px var(--mono);text-transform:uppercase;letter-spacing:.1em;color:var(--acid)}
+    .problem-answer h3{font-size:clamp(34px,4.2vw,58px);margin:20px 0;color:var(--panel-ink)}
+    .problem-answer p{color:var(--panel-muted);font-size:17px;max-width:590px}
+    .answer-meta{display:flex;flex-wrap:wrap;gap:9px;margin-top:32px}
+    .answer-meta span{border:1px solid var(--panel-line);padding:8px 10px;font:400 10px var(--mono);color:var(--panel-ink)}
+
+    /* Services */
+    .services{padding:120px 0;background:var(--panel-dark);color:var(--panel-ink);position:relative;overflow:hidden}
+    .services::after{content:"DATA / WORK";position:absolute;right:-22px;top:30px;font:500 clamp(70px,13vw,180px) var(--display);font-style:italic;color:rgba(255,255,255,.025);white-space:nowrap}
+    .services .section-kicker{color:var(--acid)}
+    .services .section-heading p{color:var(--panel-muted)}
+    .service-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--panel-line);border-left:1px solid var(--panel-line)}
+    .service-card{min-height:420px;padding:clamp(26px,4vw,46px);border-right:1px solid var(--panel-line);border-bottom:1px solid var(--panel-line);position:relative;transition:.25s}
+    .service-card:hover{background:var(--panel-dark-2)}
+    .service-top{display:flex;justify-content:space-between;gap:16px;color:#9fa8a3;font:400 10px var(--mono);text-transform:uppercase;letter-spacing:.08em}
+    .service-card h3{font-size:clamp(34px,4vw,52px);margin:50px 0 20px;color:#fff;max-width:500px}
+    .service-card>p{color:var(--panel-muted);max-width:540px}
+    .service-list{list-style:none;margin-top:30px;display:grid;gap:10px}
+    .service-list li{font:400 13px var(--mono);color:#e0e4e1}
+    .service-list li::before{content:"↳";color:var(--acid);margin-right:10px}
+    .service-card:nth-child(2) h3{color:var(--acid)}
+    .service-card:nth-child(3) h3{color:var(--cyan)}
+    .service-card:nth-child(4) h3{color:#ff8c77}
+
+    /* Proof */
+    .proof{padding:120px 0}
+    .proof-intro{display:grid;grid-template-columns:1.25fr .75fr;gap:60px;align-items:end;margin-bottom:58px}
+    .proof-intro p{font-size:18px;max-width:440px}
+    .case-list{border-top:1px solid var(--ink)}
+    .case{
+      display:grid;grid-template-columns:100px minmax(230px,.8fr) minmax(300px,1.2fr) 170px;
+      gap:30px;align-items:start;padding:38px 0;border-bottom:1px solid var(--line)
+    }
+    .case-number{font:400 12px var(--mono);color:var(--blue-text)}
+    .case h3{font-size:clamp(28px,3vw,42px)}
+    .case-copy p{font-size:16px;max-width:640px}
+    .case-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+    .case-tags span{border:1px solid var(--line);padding:5px 8px;font:400 9px var(--mono);text-transform:uppercase}
+    .outcome{text-align:right}
+    .outcome strong{display:block;font:500 clamp(34px,4vw,56px) var(--display);color:var(--blue-text);line-height:1}
+    .outcome span{display:block;margin-top:8px;color:var(--ink-soft);font:400 10px var(--mono);text-transform:uppercase}
+
+    /* Fit and process */
+    .fit{padding:0 0 120px}
+    .fit-box{display:grid;grid-template-columns:.82fr 1.18fr;border:1px solid var(--ink);box-shadow:12px 12px 0 var(--ink)}
+    .fit-heading{padding:clamp(32px,5vw,64px);background:var(--acid);color:#141717}
+    .fit-heading h2{font-size:clamp(42px,5.4vw,70px)}
+    .fit-heading p{color:#303535;margin-top:22px;max-width:430px}
+    .fit-list{padding:clamp(32px,5vw,64px);background:var(--paper-2);display:grid;gap:0}
+    .fit-row{display:grid;grid-template-columns:32px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line)}
+    .fit-row:first-child{padding-top:0}
+    .fit-row:last-child{border:0;padding-bottom:0}
+    .fit-row .tick{color:var(--blue-text);font:500 15px var(--mono)}
+    .fit-row strong{display:block;font-size:18px;margin-bottom:4px}
+    .fit-row p{font-size:14px}
+
+    .process{padding:120px 0;background:var(--paper-2);border-block:1px solid var(--line)}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);margin-top:56px;border-top:1px solid var(--ink);border-left:1px solid var(--ink)}
+    .step{min-height:300px;padding:30px;border-right:1px solid var(--ink);border-bottom:1px solid var(--ink);position:relative}
+    .step-index{font:500 11px var(--mono);color:var(--blue-text)}
+    .step h3{font-size:30px;margin:60px 0 16px}
+    .step p{font-size:14px}
+    .step::after{content:"";position:absolute;right:18px;top:18px;width:9px;height:9px;border-radius:50%;background:var(--coral)}
+    .step:nth-child(2)::after{background:var(--blue)}
+    .step:nth-child(3)::after{background:var(--cyan)}
+    .step:nth-child(4)::after{background:var(--acid);border:1px solid #141717}
+
+    /* FAQ */
+    .faq{padding:120px 0}
+    .faq-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:70px}
+    .faq-heading{position:sticky;top:110px;align-self:start}
+    .faq-heading h2{margin-top:18px}
+    .faq-list{border-top:1px solid var(--ink)}
+    details{border-bottom:1px solid var(--line)}
+    summary{list-style:none;cursor:pointer;padding:24px 42px 24px 0;position:relative;font-weight:600;font-size:18px}
+    summary::-webkit-details-marker{display:none}
+    summary::after{content:"+";position:absolute;right:8px;top:21px;font:400 23px var(--mono);color:var(--blue-text)}
+    details[open] summary::after{content:"−"}
+    details p{padding:0 42px 24px 0;max-width:720px}
+
+    /* Contact */
+    .contact{padding:120px 0 34px;background:var(--blue);color:#fff;position:relative;overflow:hidden}
+    .contact::after{content:"";position:absolute;width:420px;height:420px;border:1px solid rgba(255,255,255,.25);border-radius:50%;right:-130px;top:-80px;box-shadow:0 0 0 70px rgba(255,255,255,.04),0 0 0 140px rgba(255,255,255,.03)}
+    .contact-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:80px;align-items:end;position:relative;z-index:1}
+    .contact .eyebrow{color:#dbe3ff}
+    .contact .eyebrow::before{background:var(--acid)}
+    .contact h2{font-size:clamp(54px,8vw,110px);max-width:850px;margin:22px 0 28px}
+    .contact h2 em{color:var(--acid);font-weight:300}
+    .contact-copy>p{color:#fff;font-size:19px;max-width:690px}
+    .contact-details{display:grid;gap:12px;margin-top:34px;max-width:760px}
+    .contact-link{
+      display:grid;grid-template-columns:90px minmax(0,1fr) 24px;gap:16px;align-items:center;
+      min-height:72px;padding:14px 18px;border:1px solid rgba(255,255,255,.72);
+      background:rgba(18,27,88,.22);color:#fff;text-decoration:none;transition:.18s
+    }
+    .contact-link:hover{background:#fff;color:var(--blue);transform:translateX(5px)}
+    .contact-link-label{font:500 10px var(--mono);text-transform:uppercase;letter-spacing:.09em;color:var(--acid)}
+    .contact-link:hover .contact-link-label{color:var(--blue)}
+    .contact-link-value{font:600 clamp(15px,2vw,20px) var(--sans);overflow-wrap:anywhere}
+    .contact-link-arrow{text-align:right;font:500 16px var(--mono)}
+    .brief-card{background:#141717;color:#fff;padding:28px;border:1px solid #000;box-shadow:10px 10px 0 var(--acid);transform:rotate(-1deg)}
+    .brief-card h3{font-size:31px;margin-bottom:22px;color:var(--acid)}
+    .brief-list{list-style:none;display:grid;gap:16px}
+    .brief-list li{display:grid;grid-template-columns:24px 1fr;gap:10px;color:#cbd0ce;font:400 12px var(--mono)}
+    .brief-list .num{color:var(--acid)}
+    footer{margin-top:100px;padding-top:24px;border-top:1px solid rgba(255,255,255,.25);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#d8e0ff;font:400 10px var(--mono);position:relative;z-index:1}
+    footer a{text-decoration:none}
+    footer a:hover{color:var(--acid)}
+
+    /* Responsive */
+    @media(max-width:1000px){
+      .hero-grid,.problem-layout,.fit-box,.contact-grid{grid-template-columns:1fr}
+      .hero{padding-top:130px}
+      .report-card{max-width:680px;margin-top:20px;transform:none}
+      .field-note{right:18px}
+      .section-heading,.proof-intro,.faq-grid{grid-template-columns:1fr;gap:24px}
+      .service-grid{grid-template-columns:1fr 1fr}
+      .case{grid-template-columns:70px 1fr 1.2fr}.outcome{grid-column:2/4;text-align:left;display:flex;align-items:end;gap:14px}.outcome span{max-width:130px}
+      .steps{grid-template-columns:1fr 1fr}
+      .faq-heading{position:static}
+    }
+    @media(max-width:760px){
+      .shell{width:min(calc(100% - 28px),var(--max))}
+      .nav-inner{height:66px}.nav-links{display:none}.nav-cta{display:none}
+      .hero{min-height:auto;padding:112px 0 90px}.hero h1{font-size:clamp(54px,18vw,78px)}
+      .hero-grid{gap:40px}.hero-actions{display:grid}.button{width:100%}
+      .report-card{padding:18px;box-shadow:9px 9px 0 var(--blue)}
+      .source-flow{grid-template-columns:1fr 22px 1fr}.source-flow .source:nth-of-type(2),.source-flow .arrow:nth-of-type(2){display:none}
+      .mini-metrics{grid-template-columns:1fr}.mini-metric{min-height:auto}
+      .field-note{position:relative;right:auto;bottom:auto;margin:18px 0 -45px auto}
+      .tool-track{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;padding-inline:18px}
+      .problems,.services,.proof,.process,.faq,.contact{padding-top:88px}.problems,.proof,.faq{padding-bottom:88px}
+      .section-heading{margin-bottom:36px}.problem-layout{border:0}.problem-options{border:1px solid var(--ink)}.problem-answer{min-height:360px}
+      .service-grid{grid-template-columns:1fr}.service-card{min-height:auto}.service-card h3{margin-top:38px}
+      .case{grid-template-columns:42px 1fr;gap:16px}.case-copy{grid-column:2}.outcome{grid-column:2;display:block}.outcome span{max-width:none}
+      .fit{padding-bottom:88px}.fit-box{box-shadow:7px 7px 0 var(--ink)}
+      .steps{grid-template-columns:1fr}.step{min-height:auto}.step h3{margin-top:38px}
+      .contact-grid{gap:55px}.contact h2{font-size:clamp(52px,17vw,76px)}
+      .contact-link{grid-template-columns:1fr 22px;gap:6px 12px;padding:15px}.contact-link-label{grid-column:1}.contact-link-value{grid-column:1}.contact-link-arrow{grid-column:2;grid-row:1/3;align-self:center}
+      footer{margin-top:70px}
+    }
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main"><span data-en="Skip to content" data-es="Saltar al contenido">Skip to content</span></a>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="shell nav-inner">
+      <a class="brand" href="#top" aria-label="Ezequiel Ríos Kaliman — top">ER</a>
+      <div class="nav-links">
+        <a href="#services"><span data-en="Services" data-es="Servicios">Services</span></a>
+        <a href="#proof"><span data-en="Results" data-es="Resultados">Results</span></a>
+        <a href="#process"><span data-en="Process" data-es="Proceso">Process</span></a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch colour theme">◐</button>
+        <button class="language-button" id="language-toggle" type="button" aria-label="Cambiar idioma">ES ↔</button>
+        <a class="nav-cta" href="#contact"><span data-en="Discuss a project" data-es="Hablemos">Discuss a project</span> ↓</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span data-en="Freelance data analyst · remote" data-es="Data Analyst freelance · remoto">Freelance data analyst · remote</span></div>
+          <h1><span data-en="Clear reporting." data-es="Reportes claros.">Clear reporting.</span><br><em data-en="Less spreadsheet chaos." data-es="Menos caos en Sheets.">Less spreadsheet chaos.</em></h1>
+          <p class="hero-lead">
+            <span data-en="I help small teams " data-es="Ayudo a equipos pequeños a ">I help small teams </span><strong data-en="fix messy spreadsheets, connect business data, build useful dashboards and automate recurring reports" data-es="ordenar planillas, conectar datos, construir dashboards útiles y automatizar reportes recurrentes">fix messy spreadsheets, connect business data, build useful dashboards and automate recurring reports</strong><span data-en="—without hiring a full-time data team." data-es="—sin contratar un equipo de datos full-time.">—without hiring a full-time data team.</span>
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact"><span data-en="Tell me what is messy" data-es="Contame qué está desordenado">Tell me what is messy</span> ↓</a>
+            <a class="button button-secondary" href="#services"><span data-en="See services" data-es="Ver servicios">See services</span> ↓</a>
+          </div>
+          <div class="availability">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span data-en="Available for project-based and ongoing support" data-es="Disponible para proyectos y soporte recurrente">Available for project-based and ongoing support</span>
+            <span>EU / UK overlap</span>
+          </div>
+        </div>
+
+        <aside class="report-card" aria-label="Example automated reporting workflow">
+          <div class="report-head"><span class="live">workflow / live</span><span>weekly_report.run()</span></div>
+          <h2 data-en="From scattered inputs to one useful view." data-es="De fuentes dispersas a una vista útil.">From scattered inputs to one useful view.</h2>
+          <p data-en="The work behind the dashboard matters: clean definitions, connected sources, validation and an output people can use." data-es="Lo que hay detrás del dashboard importa: definiciones claras, fuentes conectadas, validación y una salida que el equipo pueda usar.">The work behind the dashboard matters: clean definitions, connected sources, validation and an output people can use.</p>
+          <div class="source-flow" aria-hidden="true">
+            <div class="source">Sheets</div><div class="arrow">→</div>
+            <div class="source">Ads / CRM</div><div class="arrow">→</div>
+            <div class="destination">One report</div>
+          </div>
+          <div class="mini-metrics">
+            <div class="mini-metric"><span data-en="sources connected" data-es="fuentes conectadas">sources connected</span><strong>4</strong></div>
+            <div class="mini-metric"><span data-en="manual exports" data-es="exports manuales">manual exports</span><strong>0</strong></div>
+            <div class="mini-metric"><span data-en="decision-ready" data-es="listo para decidir">decision-ready</span><strong>✓</strong></div>
+          </div>
+          <div class="field-note"><strong data-en="Useful first." data-es="Útil primero.">Useful first.</strong><span data-en="The right solution might be a better Sheet—not a new platform." data-es="La solución correcta puede ser un Sheet mejor, no una plataforma nueva.">The right solution might be a better Sheet—not a new platform.</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <div class="tool-strip" aria-label="Tools and capabilities">
+      <div class="shell tool-track">
+        <span>Google Sheets</span><span>SQL</span><span>Looker Studio</span><span>Power BI</span><span>Python</span><span>APIs</span><span>Practical AI</span>
+      </div>
+    </div>
+
+    <section class="problems" aria-labelledby="problems-title">
+      <div class="shell">
+        <span class="section-kicker" data-en="Start with the problem" data-es="Empecemos por el problema">Start with the problem</span>
+        <div class="section-heading">
+          <h2 id="problems-title"><span data-en="What is slowing" data-es="¿Qué está frenando">What is slowing</span><br><em data-en="your team down?" data-es="a tu equipo?">your team down?</em></h2>
+          <p data-en="You do not need to know which tool or dashboard you need. Bring the manual, inconsistent or repetitive part." data-es="No necesitás saber qué herramienta o dashboard hace falta. Traé la parte manual, inconsistente o repetitiva.">You do not need to know which tool or dashboard you need. Bring the manual, inconsistent or repetitive part.</p>
+        </div>
+        <div class="problem-layout">
+          <div class="problem-options" role="tablist" aria-label="Common data problems">
+            <button class="problem-button active" type="button" role="tab" aria-selected="true" data-problem="sheets"><span class="count">01</span><span class="label" data-en="Our spreadsheets are becoming unmanageable" data-es="Nuestras planillas se volvieron inmanejables">Our spreadsheets are becoming unmanageable</span><span class="plus">+</span></button>
+            <button class="problem-button" type="button" role="tab" aria-selected="false" data-problem="reporting"><span class="count">02</span><span class="label" data-en="Reporting takes too much time every week" data-es="Los reportes llevan demasiado tiempo cada semana">Reporting takes too much time every week</span><span class="plus">+</span></button>
+            <button class="problem-button" type="button" role="tab" aria-selected="false" data-problem="sources"><span class="count">03</span><span class="label" data-en="Our numbers live in different tools" data-es="Nuestros números viven en distintas herramientas">Our numbers live in different tools</span><span class="plus">+</span></button>
+            <button class="problem-button" type="button" role="tab" aria-selected="false" data-problem="automation"><span class="count">04</span><span class="label" data-en="The team repeats the same data tasks manually" data-es="El equipo repite las mismas tareas de datos manualmente">The team repeats the same data tasks manually</span><span class="plus">+</span></button>
+          </div>
+          <div class="problem-answer" role="tabpanel" aria-live="polite">
+            <div>
+              <span class="answer-label" id="answer-label">A practical first step</span>
+              <h3 id="answer-title">Stabilise the system you already use.</h3>
+              <p id="answer-copy">I can clean up the structure, formulas, ownership and validation before deciding whether anything needs to be rebuilt.</p>
+            </div>
+            <div class="answer-meta" id="answer-meta"><span>Google Sheets</span><span>Excel</span><span>3–7 days typical</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services" aria-labelledby="services-title">
+      <div class="shell">
+        <span class="section-kicker" data-en="Ways to work together" data-es="Formas de trabajar juntos">Ways to work together</span>
+        <div class="section-heading">
+          <h2 id="services-title"><span data-en="Data support you can" data-es="Servicios de datos que podés">Data support you can</span><br><em data-en="actually buy." data-es="contratar de verdad.">actually buy.</em></h2>
+          <p data-en="A defined project when the problem is clear, or flexible monthly support when the needs keep evolving." data-es="Un proyecto definido cuando el problema está claro, o soporte mensual flexible cuando las necesidades evolucionan.">A defined project when the problem is clear, or flexible monthly support when the needs keep evolving.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-top"><span>01 / clean</span><span data-en="One-off project" data-es="Proyecto puntual">One-off project</span></div>
+            <h3 data-en="Spreadsheet rescue" data-es="Rescate de planillas">Spreadsheet rescue</h3>
+            <p data-en="Turn fragile Sheets and manual trackers into reliable tools the team can understand and maintain." data-es="Convertí Sheets frágiles y trackers manuales en herramientas confiables que el equipo pueda entender y mantener.">Turn fragile Sheets and manual trackers into reliable tools the team can understand and maintain.</p>
+            <ul class="service-list">
+              <li data-en="Structure, formulas and validation" data-es="Estructura, fórmulas y validaciones">Structure, formulas and validation</li>
+              <li data-en="Data cleanup and deduplication" data-es="Limpieza y deduplicación de datos">Data cleanup and deduplication</li>
+              <li data-en="Operational and KPI trackers" data-es="Trackers operativos y de KPIs">Operational and KPI trackers</li>
+              <li data-en="Documentation and handover" data-es="Documentación y transferencia">Documentation and handover</li>
+            </ul>
+          </article>
+          <article class="service-card">
+            <div class="service-top"><span>02 / connect</span><span data-en="Defined project" data-es="Proyecto definido">Defined project</span></div>
+            <h3 data-en="Connected dashboards" data-es="Dashboards conectados">Connected dashboards</h3>
+            <p data-en="Bring marketing, sales, finance or operational data into one clear reporting surface." data-es="Unificá datos de marketing, ventas, finanzas u operaciones en una vista clara para reportar.">Bring marketing, sales, finance or operational data into one clear reporting surface.</p>
+            <ul class="service-list">
+              <li data-en="Source and API connections" data-es="Conexiones a fuentes y APIs">Source and API connections</li>
+              <li data-en="KPI definitions and business logic" data-es="Definiciones de KPIs y lógica de negocio">KPI definitions and business logic</li>
+              <li data-en="Looker Studio or Power BI" data-es="Looker Studio o Power BI">Looker Studio or Power BI</li>
+              <li data-en="Executive and client reporting" data-es="Reportes ejecutivos y para clientes">Executive and client reporting</li>
+            </ul>
+          </article>
+          <article class="service-card">
+            <div class="service-top"><span>03 / automate</span><span data-en="Project or retainer" data-es="Proyecto o mensual">Project or retainer</span></div>
+            <h3 data-en="Reporting automation" data-es="Automatización de reportes">Reporting automation</h3>
+            <p data-en="Remove exports, copy-pasting, repetitive checks and the coordination work around recurring reports." data-es="Eliminá exports, copy-paste, controles repetitivos y coordinación manual alrededor de reportes recurrentes.">Remove exports, copy-pasting, repetitive checks and the coordination work around recurring reports.</p>
+            <ul class="service-list">
+              <li data-en="Scheduled reporting workflows" data-es="Flujos de reporting programados">Scheduled reporting workflows</li>
+              <li data-en="Alerts and anomaly detection" data-es="Alertas y detección de anomalías">Alerts and anomaly detection</li>
+              <li data-en="Python and no-code integrations" data-es="Integraciones con Python y no-code">Python and no-code integrations</li>
+              <li data-en="AI summaries with human review" data-es="Resúmenes con IA y revisión humana">AI summaries with human review</li>
+            </ul>
+          </article>
+          <article class="service-card">
+            <div class="service-top"><span>04 / ongoing</span><span data-en="Monthly support" data-es="Soporte mensual">Monthly support</span></div>
+            <h3 data-en="Fractional data analyst" data-es="Data Analyst fractional">Fractional data analyst</h3>
+            <p data-en="Flexible analytical support for teams that need answers and improvements but not another full-time hire." data-es="Soporte analítico flexible para equipos que necesitan respuestas y mejoras sin otra contratación full-time.">Flexible analytical support for teams that need answers and improvements but not another full-time hire.</p>
+            <ul class="service-list">
+              <li data-en="Recurring business analysis" data-es="Análisis de negocio recurrente">Recurring business analysis</li>
+              <li data-en="Dashboard maintenance and iteration" data-es="Mantenimiento e iteración de dashboards">Dashboard maintenance and iteration</li>
+              <li data-en="New metrics and ad-hoc questions" data-es="Nuevas métricas y preguntas ad-hoc">New metrics and ad-hoc questions</li>
+              <li data-en="A prioritised monthly roadmap" data-es="Roadmap mensual priorizado">A prioritised monthly roadmap</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof" id="proof" aria-labelledby="proof-title">
+      <div class="shell">
+        <span class="section-kicker" data-en="Evidence from real work" data-es="Evidencia de trabajo real">Evidence from real work</span>
+        <div class="proof-intro">
+          <h2 id="proof-title"><span data-en="Proof before" data-es="Pruebas antes que">Proof before</span><br><em data-en="promises." data-es="promesas.">promises.</em></h2>
+          <p data-en="Selected outcomes from senior in-house and consulting work, explained through the operating problem and the change delivered." data-es="Resultados seleccionados de roles internos y consultoría, explicados desde el problema operativo y el cambio entregado.">Selected outcomes from senior in-house and consulting work, explained through the operating problem and the change delivered.</p>
+        </div>
+        <div class="case-list">
+          <article class="case">
+            <span class="case-number">CASE / 01</span>
+            <h3 data-en="Multi-channel reporting migration" data-es="Migración de reporting multicanal">Multi-channel reporting migration</h3>
+            <div class="case-copy">
+              <p data-en="Unified Google Ads, Meta and TikTok data while coordinating multiple teams and reconciling platform differences—without losing reporting continuity." data-es="Unifiqué datos de Google Ads, Meta y TikTok coordinando múltiples equipos y reconciliando diferencias entre plataformas, sin perder continuidad en los reportes.">Unified Google Ads, Meta and TikTok data while coordinating multiple teams and reconciling platform differences—without losing reporting continuity.</p>
+              <div class="case-tags"><span>Data integration</span><span>Reporting</span><span>Migration</span></div>
+            </div>
+            <div class="outcome"><strong>2,000+</strong><span data-en="accounts migrated in three months" data-es="cuentas migradas en tres meses">accounts migrated in three months</span></div>
+          </article>
+          <article class="case">
+            <span class="case-number">CASE / 02</span>
+            <h3 data-en="Manual pacing to operating dashboard" data-es="De pacing manual a dashboard operativo">Manual pacing to operating dashboard</h3>
+            <div class="case-copy">
+              <p data-en="Translated client-specific billing rules and spreadsheet edge cases into a governed analytical surface with a shared view of pacing." data-es="Traducí reglas de facturación y excepciones de planillas a una superficie analítica gobernada con una vista compartida del pacing.">Translated client-specific billing rules and spreadsheet edge cases into a governed analytical surface with a shared view of pacing.</p>
+              <div class="case-tags"><span>Business rules</span><span>Dashboard</span><span>Adoption</span></div>
+            </div>
+            <div class="outcome"><strong>~35</strong><span data-en="users moved off the manual sheet" data-es="usuarios dejaron la planilla manual">users moved off the manual sheet</span></div>
+          </article>
+          <article class="case">
+            <span class="case-number">CASE / 03</span>
+            <h3 data-en="Company-wide metric trust layer" data-es="Capa de confianza para métricas">Company-wide metric trust layer</h3>
+            <div class="case-copy">
+              <p data-en="Established definitions, logic, sources and owners for core company metrics, supported by purpose-built models." data-es="Establecí definiciones, lógica, fuentes y responsables para métricas centrales, respaldadas por modelos construidos para ese fin.">Established definitions, logic, sources and owners for core company metrics, supported by purpose-built models.</p>
+              <div class="case-tags"><span>KPIs</span><span>dbt</span><span>Governance</span></div>
+            </div>
+            <div class="outcome"><strong>~20</strong><span data-en="core metrics standardised" data-es="métricas centrales estandarizadas">core metrics standardised</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="fit" aria-labelledby="fit-title">
+      <div class="shell fit-box">
+        <div class="fit-heading">
+          <span class="section-kicker" data-en="A good fit" data-es="Un buen encaje">A good fit</span>
+          <h2 id="fit-title"><span data-en="Small team." data-es="Equipo pequeño.">Small team.</span><br><em data-en="Real data problem." data-es="Problema real de datos.">Real data problem.</em></h2>
+          <p data-en="The best projects are important enough to fix, but do not need a six-month transformation programme." data-es="Los mejores proyectos son lo bastante importantes para resolver, pero no necesitan una transformación de seis meses.">The best projects are important enough to fix, but do not need a six-month transformation programme.</p>
+        </div>
+        <div class="fit-list">
+          <div class="fit-row"><span class="tick">✓</span><div><strong data-en="Agencies with repetitive client reporting" data-es="Agencias con reporting repetitivo para clientes">Agencies with repetitive client reporting</strong><p data-en="Combine paid media, analytics and operational context without rebuilding reports every month." data-es="Combiná paid media, analytics y contexto operativo sin rehacer reportes cada mes.">Combine paid media, analytics and operational context without rebuilding reports every month.</p></div></div>
+          <div class="fit-row"><span class="tick">✓</span><div><strong data-en="Ecommerce and service businesses with scattered KPIs" data-es="Ecommerce y servicios con KPIs dispersos">Ecommerce and service businesses with scattered KPIs</strong><p data-en="Connect sales, marketing and operational numbers into one useful view." data-es="Conectá ventas, marketing y operaciones en una vista útil.">Connect sales, marketing and operational numbers into one useful view.</p></div></div>
+          <div class="fit-row"><span class="tick">✓</span><div><strong data-en="Growing teams held together by spreadsheets" data-es="Equipos en crecimiento sostenidos por planillas">Growing teams held together by spreadsheets</strong><p data-en="Keep what works, stabilise what is fragile and automate the costly repetition." data-es="Conservá lo que funciona, estabilizá lo frágil y automatizá la repetición costosa.">Keep what works, stabilise what is fragile and automate the costly repetition.</p></div></div>
+          <div class="fit-row"><span class="tick">✓</span><div><strong data-en="Founders who need answers, not another tool" data-es="Fundadores que necesitan respuestas, no otra herramienta">Founders who need answers, not another tool</strong><p data-en="Start from the decision and use the smallest system that reliably supports it." data-es="Empezá desde la decisión y usá el sistema más pequeño que pueda sostenerla.">Start from the decision and use the smallest system that reliably supports it.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="process" aria-labelledby="process-title">
+      <div class="shell">
+        <span class="section-kicker" data-en="A low-drama process" data-es="Un proceso sin complicaciones">A low-drama process</span>
+        <div class="section-heading">
+          <h2 id="process-title"><span data-en="From messy brief" data-es="Del problema desordenado">From messy brief</span><br><em data-en="to owned system." data-es="al sistema en tus manos.">to owned system.</em></h2>
+          <p data-en="The work stays visible. We test the hardest assumption early, build only what earns its place and leave your team able to operate it." data-es="El trabajo se mantiene visible. Probamos temprano la suposición más difícil, construimos solo lo necesario y tu equipo queda preparado para operarlo.">The work stays visible. We test the hardest assumption early, build only what earns its place and leave your team able to operate it.</p>
+        </div>
+        <div class="steps">
+          <article class="step"><span class="step-index">01 / UNDERSTAND</span><h3 data-en="Map the problem" data-es="Mapear el problema">Map the problem</h3><p data-en="Users, decisions, sources, manual work, constraints and one clear success signal." data-es="Usuarios, decisiones, fuentes, trabajo manual, restricciones y una señal clara de éxito.">Users, decisions, sources, manual work, constraints and one clear success signal.</p></article>
+          <article class="step"><span class="step-index">02 / PROVE</span><h3 data-en="Build a thin slice" data-es="Construir una prueba">Build a thin slice</h3><p data-en="A small end-to-end version proves the connection, logic and usefulness before expanding scope." data-es="Una versión pequeña de punta a punta prueba la conexión, lógica y utilidad antes de ampliar el alcance.">A small end-to-end version proves the connection, logic and usefulness before expanding scope.</p></article>
+          <article class="step"><span class="step-index">03 / DELIVER</span><h3 data-en="Make it reliable" data-es="Hacerlo confiable">Make it reliable</h3><p data-en="Validation, error handling, a clear interface and a workflow that matches how the team operates." data-es="Validación, manejo de errores, una interfaz clara y un flujo acorde a cómo trabaja el equipo.">Validation, error handling, a clear interface and a workflow that matches how the team operates.</p></article>
+          <article class="step"><span class="step-index">04 / TRANSFER</span><h3 data-en="Leave ownership" data-es="Transferir el control">Leave ownership</h3><p data-en="Documentation, walkthrough and a practical next-step list—no mystery dependency." data-es="Documentación, walkthrough y próximos pasos concretos, sin dependencia misteriosa.">Documentation, walkthrough and a practical next-step list—no mystery dependency.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="shell faq-grid">
+        <div class="faq-heading">
+          <span class="section-kicker" data-en="Before we talk" data-es="Antes de hablar">Before we talk</span>
+          <h2 id="faq-title"><span data-en="Useful" data-es="Preguntas">Useful</span><br><em data-en="questions." data-es="útiles.">questions.</em></h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary data-en="Do we need a data warehouse or an expensive BI tool?" data-es="¿Necesitamos un data warehouse o una herramienta BI cara?">Do we need a data warehouse or an expensive BI tool?</summary>
+            <p data-en="Not necessarily. The solution should match the decision, volume and team. Sometimes a well-designed Google Sheet is enough; sometimes connected BI or a small data model is justified." data-es="No necesariamente. La solución debe corresponder a la decisión, el volumen y el equipo. A veces alcanza con un Google Sheet bien diseñado; otras veces se justifica BI conectado o un pequeño modelo de datos.">Not necessarily. The solution should match the decision, volume and team. Sometimes a well-designed Google Sheet is enough; sometimes connected BI or a small data model is justified.</p>
+          </details>
+          <details>
+            <summary data-en="Can you work with our existing spreadsheets and tools?" data-es="¿Podés trabajar con nuestras planillas y herramientas actuales?">Can you work with our existing spreadsheets and tools?</summary>
+            <p data-en="Yes. Replacing everything is rarely the right first move. I start by understanding what already works, where it breaks and which part creates the most avoidable effort." data-es="Sí. Reemplazar todo rara vez es el mejor primer paso. Empiezo entendiendo qué funciona, dónde falla y qué parte genera el mayor esfuerzo evitable.">Yes. Replacing everything is rarely the right first move. I start by understanding what already works, where it breaks and which part creates the most avoidable effort.</p>
+          </details>
+          <details>
+            <summary data-en="Do you offer one-off projects or ongoing support?" data-es="¿Ofrecés proyectos puntuales o soporte recurrente?">Do you offer one-off projects or ongoing support?</summary>
+            <p data-en="Both. A defined cleanup, dashboard or automation can be delivered as a project. Evolving analysis, maintenance and improvements are better suited to a monthly arrangement." data-es="Ambos. Una limpieza, dashboard o automatización definida puede entregarse como proyecto. El análisis, mantenimiento y mejoras continuas encajan mejor en un acuerdo mensual.">Both. A defined cleanup, dashboard or automation can be delivered as a project. Evolving analysis, maintenance and improvements are better suited to a monthly arrangement.</p>
+          </details>
+          <details>
+            <summary data-en="Where does AI fit into the work?" data-es="¿Dónde entra la IA en el trabajo?">Where does AI fit into the work?</summary>
+            <p data-en="Only where it creates a dependable advantage: classifying information, drafting report commentary, detecting patterns or supporting repetitive workflows. Critical outputs keep validation and human review." data-es="Solo donde crea una ventaja confiable: clasificar información, redactar comentarios de reportes, detectar patrones o apoyar flujos repetitivos. Los resultados críticos mantienen validación y revisión humana.">Only where it creates a dependable advantage: classifying information, drafting report commentary, detecting patterns or supporting repetitive workflows. Critical outputs keep validation and human review.</p>
+          </details>
+          <details>
+            <summary data-en="What do you need for a first conversation?" data-es="¿Qué necesitás para una primera conversación?">What do you need for a first conversation?</summary>
+            <p data-en="A rough description is enough: what your team does manually, which tools are involved, how often it happens and what would improve if the problem disappeared." data-es="Una descripción aproximada alcanza: qué hace manualmente tu equipo, qué herramientas intervienen, con qué frecuencia ocurre y qué mejoraría si el problema desapareciera.">A rough description is enough: what your team does manually, which tools are involved, how often it happens and what would improve if the problem disappeared.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="shell">
+        <div class="contact-grid">
+          <div class="contact-copy">
+            <div class="eyebrow"><span data-en="Start with the messy version" data-es="Empecemos por la versión desordenada">Start with the messy version</span></div>
+            <h2 id="contact-title"><span data-en="What is your team" data-es="¿Qué está haciendo">What is your team</span><br><em data-en="still doing manually?" data-es="tu equipo manualmente?">still doing manually?</em></h2>
+            <p data-en="Send me the problem in plain language. I will reply with the questions needed to determine whether a small, useful project makes sense." data-es="Mandame el problema en palabras simples. Voy a responder con las preguntas necesarias para determinar si tiene sentido un proyecto pequeño y útil.">Send me the problem in plain language. I will reply with the questions needed to determine whether a small, useful project makes sense.</p>
+            <div class="contact-details" aria-label="Direct contact details">
+              <a class="contact-link" href="mailto:ezequiel.datanalytics@gmail.com?subject=Freelance%20data%20project">
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">ezequiel.datanalytics@gmail.com</span>
+                <span class="contact-link-arrow">↗</span>
+              </a>
+              <a class="contact-link" href="https://www.linkedin.com/in/ezequiel-rioskaliman/" target="_blank" rel="noopener">
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">linkedin.com/in/ezequiel-rioskaliman</span>
+                <span class="contact-link-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+          <aside class="brief-card">
+            <h3 data-en="A useful first message" data-es="Un primer mensaje útil">A useful first message</h3>
+            <ol class="brief-list">
+              <li><span class="num">01</span><span data-en="What your business or team does" data-es="Qué hace tu empresa o equipo">What your business or team does</span></li>
+              <li><span class="num">02</span><span data-en="The report, spreadsheet or workflow causing friction" data-es="El reporte, planilla o flujo que genera fricción">The report, spreadsheet or workflow causing friction</span></li>
+              <li><span class="num">03</span><span data-en="The tools and sources currently involved" data-es="Las herramientas y fuentes involucradas">The tools and sources currently involved</span></li>
+              <li><span class="num">04</span><span data-en="What better would look like" data-es="Cómo se vería una mejora real">What better would look like</span></li>
+            </ol>
+          </aside>
+        </div>
+        <footer>
+          <span>© 2026 Ezequiel Ríos Kaliman · Freelance Data Analyst</span>
+          <span><a href="mailto:ezequiel.datanalytics@gmail.com">ezequiel.datanalytics@gmail.com</a> · <a href="https://www.linkedin.com/in/ezequiel-rioskaliman/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/ezeriosk" target="_blank" rel="noopener">GitHub</a> · <a href="Ezequiel_Rios_Kaliman_CV.pdf" download>CV ↓</a></span>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const body = document.body;
+    const nav = document.querySelector('.site-nav');
+    const themeToggle = document.getElementById('theme-toggle');
+    const languageToggle = document.getElementById('language-toggle');
+    let currentLanguage = 'en';
+
+    const savedTheme = localStorage.getItem('er-theme');
+    if (savedTheme === 'dark') body.classList.add('dark');
+
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark');
+      localStorage.setItem('er-theme', body.classList.contains('dark') ? 'dark' : 'light');
+    });
+
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 18), { passive: true });
+
+    const problemContent = {
+      en: {
+        sheets: {
+          label: 'A practical first step',
+          title: 'Stabilise the system you already use.',
+          copy: 'I can clean up the structure, formulas, ownership and validation before deciding whether anything needs to be rebuilt.',
+          meta: ['Google Sheets', 'Excel', '3–7 days typical']
+        },
+        reporting: {
+          label: 'A repeatable reporting system',
+          title: 'Build the report once, then let the workflow run.',
+          copy: 'Connect the required inputs, standardise the logic and automate the repetitive preparation while keeping review where it matters.',
+          meta: ['Scheduled reports', 'QA checks', 'Alerts']
+        },
+        sources: {
+          label: 'One view of the business',
+          title: 'Connect the numbers before adding more charts.',
+          copy: 'Bring the important sources together, reconcile definitions and create one reliable surface for the decisions your team actually makes.',
+          meta: ['APIs', 'SQL / Python', 'BI dashboards']
+        },
+        automation: {
+          label: 'Remove avoidable repetition',
+          title: 'Automate the glue work, not the judgement.',
+          copy: 'Use scripts, integrations and practical AI for exports, checks, classification and summaries—with validation and human review built in.',
+          meta: ['Python', 'No-code tools', 'Practical AI']
+        }
+      },
+      es: {
+        sheets: {
+          label: 'Un primer paso práctico',
+          title: 'Estabilizá el sistema que ya usan.',
+          copy: 'Puedo ordenar la estructura, fórmulas, responsables y validaciones antes de decidir si realmente hace falta reconstruir algo.',
+          meta: ['Google Sheets', 'Excel', '3–7 días típico']
+        },
+        reporting: {
+          label: 'Un sistema de reporting repetible',
+          title: 'Construí el reporte una vez y dejá que el flujo trabaje.',
+          copy: 'Conectá las entradas necesarias, estandarizá la lógica y automatizá la preparación repetitiva, manteniendo revisión donde importa.',
+          meta: ['Reportes programados', 'Controles de calidad', 'Alertas']
+        },
+        sources: {
+          label: 'Una vista del negocio',
+          title: 'Conectá los números antes de agregar más gráficos.',
+          copy: 'Unificá las fuentes importantes, reconciliá definiciones y creá una superficie confiable para las decisiones reales del equipo.',
+          meta: ['APIs', 'SQL / Python', 'Dashboards BI']
+        },
+        automation: {
+          label: 'Eliminar repetición evitable',
+          title: 'Automatizá el trabajo mecánico, no el criterio.',
+          copy: 'Usá scripts, integraciones e IA práctica para exports, controles, clasificación y resúmenes, con validación y revisión humana.',
+          meta: ['Python', 'Herramientas no-code', 'IA práctica']
+        }
+      }
+    };
+
+    function updateProblem(key) {
+      const content = problemContent[currentLanguage][key];
+      document.getElementById('answer-label').textContent = content.label;
+      document.getElementById('answer-title').textContent = content.title;
+      document.getElementById('answer-copy').textContent = content.copy;
+      document.getElementById('answer-meta').innerHTML = content.meta.map(item => `<span>${item}</span>`).join('');
+    }
+
+    document.querySelectorAll('.problem-button').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('.problem-button').forEach(item => {
+          item.classList.remove('active');
+          item.setAttribute('aria-selected', 'false');
+        });
+        button.classList.add('active');
+        button.setAttribute('aria-selected', 'true');
+        updateProblem(button.dataset.problem);
+      });
+    });
+
+    languageToggle.addEventListener('click', () => {
+      currentLanguage = currentLanguage === 'en' ? 'es' : 'en';
+      document.documentElement.lang = currentLanguage;
+      document.querySelectorAll('[data-en][data-es]').forEach(element => {
+        element.textContent = element.dataset[currentLanguage];
+      });
+      languageToggle.textContent = currentLanguage === 'en' ? 'ES ↔' : 'EN ↔';
+      const activeProblem = document.querySelector('.problem-button.active');
+      updateProblem(activeProblem ? activeProblem.dataset.problem : 'sheets');
+    });
+  </script>
+</body>
+</html>
